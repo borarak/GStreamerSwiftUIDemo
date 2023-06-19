@@ -2,8 +2,7 @@
 
 A demo app that uses gstreamer with a SwiftUI interface to display a local RTSP feed.
 
-Before building the app, please change the RTSP address here to a valid one.
+**Note**: Before building the app, change the RTSP address [here](https://github.com/borarak/GStreamerSwiftUIDemo/blob/9d257a84243bd4c9063f1909020eae028bf3a319/GStreamerSwiftUIDemo/GStreamerBackend.m#L163) to a valid one.
 
-![init screen](!screenshot_1.png)
+
 ![play](screenshot_2.png)
-![paused](screenshot_3.png)
