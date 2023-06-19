@@ -8,17 +8,44 @@
 
 /* Begin PBXBuildFile section */
 		095960022A407D3A00C0C1BC /* GStreamerSwiftUIDemoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 095960012A407D3A00C0C1BC /* GStreamerSwiftUIDemoApp.swift */; };
-		095960042A407D3A00C0C1BC /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 095960032A407D3A00C0C1BC /* ContentView.swift */; };
+		095960042A407D3A00C0C1BC /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 095960032A407D3A00C0C1BC /* MainView.swift */; };
 		095960062A407D3A00C0C1BC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 095960052A407D3A00C0C1BC /* Assets.xcassets */; };
 		095960092A407D3A00C0C1BC /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 095960082A407D3A00C0C1BC /* Preview Assets.xcassets */; };
+		095960112A407E6E00C0C1BC /* GStreamer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 095960102A407E6E00C0C1BC /* GStreamer.framework */; };
+		095960132A407EDD00C0C1BC /* libiconv.2.4.0.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 095960122A407EDD00C0C1BC /* libiconv.2.4.0.tbd */; };
+		095960152A407EE700C0C1BC /* VideoToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 095960142A407EE700C0C1BC /* VideoToolbox.framework */; };
+		095960172A407EF100C0C1BC /* libc++.1.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 095960162A407EF100C0C1BC /* libc++.1.tbd */; };
+		0959601B2A4086D500C0C1BC /* gst_ios_init.m in Sources */ = {isa = PBXBuildFile; fileRef = 0959601A2A4086D500C0C1BC /* gst_ios_init.m */; };
+		0959601F2A40D67000C0C1BC /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0959601E2A40D67000C0C1BC /* AVFoundation.framework */; };
+		095960212A40D69400C0C1BC /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 095960202A40D69400C0C1BC /* AudioToolbox.framework */; };
+		095960232A40D6D300C0C1BC /* libcmph.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 095960222A40D6D300C0C1BC /* libcmph.tbd */; };
+		095960262A40EAFF00C0C1BC /* GStreamerBackend.m in Sources */ = {isa = PBXBuildFile; fileRef = 095960252A40EAFF00C0C1BC /* GStreamerBackend.m */; };
+		095960282A40EB7100C0C1BC /* GStreamerBackendProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 095960272A40EB7100C0C1BC /* GStreamerBackendProtocol.swift */; };
+		0959602A2A40EB9400C0C1BC /* CameraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 095960292A40EB9400C0C1BC /* CameraView.swift */; };
+		0959602C2A40EBBE00C0C1BC /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0959602B2A40EBBE00C0C1BC /* CameraViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		09595FFE2A407D3A00C0C1BC /* GStreamerSwiftUIDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GStreamerSwiftUIDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		095960012A407D3A00C0C1BC /* GStreamerSwiftUIDemoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GStreamerSwiftUIDemoApp.swift; sourceTree = "<group>"; };
-		095960032A407D3A00C0C1BC /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		095960032A407D3A00C0C1BC /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		095960052A407D3A00C0C1BC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		095960082A407D3A00C0C1BC /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		095960102A407E6E00C0C1BC /* GStreamer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GStreamer.framework; path = ../../Library/Developer/GStreamer/iPhone.sdk/GStreamer.framework; sourceTree = "<group>"; };
+		095960122A407EDD00C0C1BC /* libiconv.2.4.0.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libiconv.2.4.0.tbd; path = usr/lib/libiconv.2.4.0.tbd; sourceTree = SDKROOT; };
+		095960142A407EE700C0C1BC /* VideoToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = VideoToolbox.framework; path = System/Library/Frameworks/VideoToolbox.framework; sourceTree = SDKROOT; };
+		095960162A407EF100C0C1BC /* libc++.1.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.1.tbd"; path = "usr/lib/libc++.1.tbd"; sourceTree = SDKROOT; };
+		095960182A4086D400C0C1BC /* GStreamerSwiftUIDemo-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "GStreamerSwiftUIDemo-Bridging-Header.h"; sourceTree = "<group>"; };
+		095960192A4086D500C0C1BC /* gst_ios_init.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = gst_ios_init.h; sourceTree = "<group>"; };
+		0959601A2A4086D500C0C1BC /* gst_ios_init.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = gst_ios_init.m; sourceTree = "<group>"; };
+		0959601E2A40D67000C0C1BC /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		095960202A40D69400C0C1BC /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		095960222A40D6D300C0C1BC /* libcmph.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libcmph.tbd; path = usr/lib/libcmph.tbd; sourceTree = SDKROOT; };
+		095960242A40EAFF00C0C1BC /* GStreamerBackend.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GStreamerBackend.h; sourceTree = "<group>"; };
+		095960252A40EAFF00C0C1BC /* GStreamerBackend.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GStreamerBackend.m; sourceTree = "<group>"; };
+		095960272A40EB7100C0C1BC /* GStreamerBackendProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GStreamerBackendProtocol.swift; sourceTree = "<group>"; };
+		095960292A40EB9400C0C1BC /* CameraView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraView.swift; sourceTree = "<group>"; };
+		0959602B2A40EBBE00C0C1BC /* CameraViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,6 +53,13 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				095960232A40D6D300C0C1BC /* libcmph.tbd in Frameworks */,
+				095960212A40D69400C0C1BC /* AudioToolbox.framework in Frameworks */,
+				0959601F2A40D67000C0C1BC /* AVFoundation.framework in Frameworks */,
+				095960172A407EF100C0C1BC /* libc++.1.tbd in Frameworks */,
+				095960152A407EE700C0C1BC /* VideoToolbox.framework in Frameworks */,
+				095960132A407EDD00C0C1BC /* libiconv.2.4.0.tbd in Frameworks */,
+				095960112A407E6E00C0C1BC /* GStreamer.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -37,6 +71,7 @@
 			children = (
 				095960002A407D3A00C0C1BC /* GStreamerSwiftUIDemo */,
 				09595FFF2A407D3A00C0C1BC /* Products */,
+				0959600F2A407E6E00C0C1BC /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -52,9 +87,17 @@
 			isa = PBXGroup;
 			children = (
 				095960012A407D3A00C0C1BC /* GStreamerSwiftUIDemoApp.swift */,
-				095960032A407D3A00C0C1BC /* ContentView.swift */,
+				095960242A40EAFF00C0C1BC /* GStreamerBackend.h */,
+				095960252A40EAFF00C0C1BC /* GStreamerBackend.m */,
+				095960032A407D3A00C0C1BC /* MainView.swift */,
 				095960052A407D3A00C0C1BC /* Assets.xcassets */,
 				095960072A407D3A00C0C1BC /* Preview Content */,
+				095960192A4086D500C0C1BC /* gst_ios_init.h */,
+				0959601A2A4086D500C0C1BC /* gst_ios_init.m */,
+				095960182A4086D400C0C1BC /* GStreamerSwiftUIDemo-Bridging-Header.h */,
+				095960272A40EB7100C0C1BC /* GStreamerBackendProtocol.swift */,
+				095960292A40EB9400C0C1BC /* CameraView.swift */,
+				0959602B2A40EBBE00C0C1BC /* CameraViewController.swift */,
 			);
 			path = GStreamerSwiftUIDemo;
 			sourceTree = "<group>";
@@ -65,6 +108,20 @@
 				095960082A407D3A00C0C1BC /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		0959600F2A407E6E00C0C1BC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				095960222A40D6D300C0C1BC /* libcmph.tbd */,
+				095960202A40D69400C0C1BC /* AudioToolbox.framework */,
+				0959601E2A40D67000C0C1BC /* AVFoundation.framework */,
+				095960162A407EF100C0C1BC /* libc++.1.tbd */,
+				095960142A407EE700C0C1BC /* VideoToolbox.framework */,
+				095960122A407EDD00C0C1BC /* libiconv.2.4.0.tbd */,
+				095960102A407E6E00C0C1BC /* GStreamer.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -99,6 +156,7 @@
 				TargetAttributes = {
 					09595FFD2A407D3A00C0C1BC = {
 						CreatedOnToolsVersion = 14.3.1;
+						LastSwiftMigration = 1430;
 					};
 				};
 			};
@@ -137,7 +195,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				095960042A407D3A00C0C1BC /* ContentView.swift in Sources */,
+				0959601B2A4086D500C0C1BC /* gst_ios_init.m in Sources */,
+				095960262A40EAFF00C0C1BC /* GStreamerBackend.m in Sources */,
+				095960042A407D3A00C0C1BC /* MainView.swift in Sources */,
+				0959602A2A40EB9400C0C1BC /* CameraView.swift in Sources */,
+				0959602C2A40EBBE00C0C1BC /* CameraViewController.swift in Sources */,
+				095960282A40EB7100C0C1BC /* GStreamerBackendProtocol.swift in Sources */,
 				095960022A407D3A00C0C1BC /* GStreamerSwiftUIDemoApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -181,6 +244,8 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
+				EXCLUDED_ARCHS = arm64;
+				FRAMEWORK_SEARCH_PATHS = /Users/raktimbora/Library/Developer/GStreamer/iPhone.sdk/;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -195,6 +260,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "";
 				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
@@ -241,6 +307,8 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				EXCLUDED_ARCHS = arm64;
+				FRAMEWORK_SEARCH_PATHS = /Users/raktimbora/Library/Developer/GStreamer/iPhone.sdk/;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -249,6 +317,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "";
 				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
@@ -264,25 +333,62 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = NO;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"GStreamerSwiftUIDemo/Preview Content\"";
 				DEVELOPMENT_TEAM = 58N3QYAX7K;
 				ENABLE_PREVIEWS = YES;
+				FRAMEWORK_SEARCH_PATHS = "${HOME}/Library/Developer/GStreamer/iPhone.sdk/";
 				GENERATE_INFOPLIST_FILE = YES;
+				HEADER_SEARCH_PATHS = "/Users/raktimbora/Library/Developer/GStreamer/iPhone.sdk/GStreamer.framework/Headers/**";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-lresolv",
+					"-framework",
+					CoreFoundation,
+					"-framework",
+					Foundation,
+					"-framework",
+					AVFoundation,
+					"-framework",
+					CoreMedia,
+					"-framework",
+					CoreVideo,
+					"-framework",
+					CoreAudio,
+					"-framework",
+					AudioToolbox,
+					"-framework",
+					OpenGLES,
+					"-framework",
+					AssetsLibrary,
+					"-framework",
+					QuartzCore,
+					"-framework",
+					AssetsLibrary,
+					"-framework",
+					Metal,
+					"-framework",
+					IOSurface,
+					"$(inherited)",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.itonimanalytics.iosapps.GStreamerSwiftUIDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "GStreamerSwiftUIDemo/GStreamerSwiftUIDemo-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -293,25 +399,61 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = NO;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"GStreamerSwiftUIDemo/Preview Content\"";
 				DEVELOPMENT_TEAM = 58N3QYAX7K;
 				ENABLE_PREVIEWS = YES;
+				FRAMEWORK_SEARCH_PATHS = "${HOME}/Library/Developer/GStreamer/iPhone.sdk/";
 				GENERATE_INFOPLIST_FILE = YES;
+				HEADER_SEARCH_PATHS = "/Users/raktimbora/Library/Developer/GStreamer/iPhone.sdk/GStreamer.framework/Headers/**";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-lresolv",
+					"-framework",
+					CoreFoundation,
+					"-framework",
+					Foundation,
+					"-framework",
+					AVFoundation,
+					"-framework",
+					CoreMedia,
+					"-framework",
+					CoreVideo,
+					"-framework",
+					CoreAudio,
+					"-framework",
+					AudioToolbox,
+					"-framework",
+					OpenGLES,
+					"-framework",
+					AssetsLibrary,
+					"-framework",
+					QuartzCore,
+					"-framework",
+					AssetsLibrary,
+					"-framework",
+					Metal,
+					"-framework",
+					IOSurface,
+					"$(inherited)",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.itonimanalytics.iosapps.GStreamerSwiftUIDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "GStreamerSwiftUIDemo/GStreamerSwiftUIDemo-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

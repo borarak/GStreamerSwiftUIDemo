@@ -9,9 +9,12 @@ import SwiftUI
 
 @main
 struct GStreamerSwiftUIDemoApp: App {
+    init(){
+        gst_ios_init()
+    }
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            MainView()
         }
     }
 }
